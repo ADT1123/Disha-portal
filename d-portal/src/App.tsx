@@ -4,16 +4,16 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './contexts/AuthContext';
 import { SocketProvider } from './contexts/SocketContext';
-import Layout from './components/layout/Layout';
+import Layout from './components/layout/Layout.tsx';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Tasks from './pages/Tasks';
 import Team from './pages/Team';
 import Chat from './pages/Chat';
-import Attendance from './pages/Attendance';
-import Performance from './pages/Performance';
-import Announcements from './pages/Announcements';
-import ProtectedRoute from './components/ProtectedRoute';
+import Attendance from './pages/Attendance.tsx';
+import Performance from './pages/Performance.tsx';
+import Announcements from './pages/Announcements.tsx';
+import ProtectedRoute from './components/ProtectedRoute.tsx';
 
 const App: React.FC = () => {
   return (
